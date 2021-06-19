@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/filmesSeries.css" />
+
+    <!--Owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="style/responsive.css" />
+    <!--Responsividade-->
+
+    <title>NETFLIX CLONE</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h2 class="logo">NETFLIX</h2>
+        <nav>
+          <a href="#">Início</a>
+          <a href="#">Séries</a>
+          <a href="#">Filmes</a>
+          <a href="#">Documentários</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="filme-principal" id="filmePrincipal">
+        <div class="container">
+          <h3 class="titulo" id="titulo"></h3>
+          <h5 id="descCurta"></h5>
+          <div class="botoes">
+            <button role="button" id="botao" class="botao">
+              <i class="fas fa-play"></i>ASSISTIR AGORA
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="infos">
+          <p class="relevancia" id="relevancia"></p>
+          <p class="temporadas" id="temporadas"></p>
+          <p id="criacao"></p>
+        </div>
+        <div class="inormacoes">
+          <div class="descricao" id="descricao"></div>
+          <div class="genero">
+            <div class="duracao">
+              <i>Duração:</i>
+              <p id="duracao"></p>
+            </div>
+            <div class="gender">
+              <i>Gêneros:</i>
+              <p id="genero"></p>
+            </div>
+            <div class="criadores">
+              <i>Criadores:</i>
+              <p id="criadores"></p>
+            </div>
+            <div class="st" id="st">
+              <i>Status da série:</i>
+              <p id="status"></p>
+            </div>
+            <div class="st">
+              <i>Produtora: </i>
+              <p id="prod"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="/js/hover.js"></script>
+  <script
+    src="https://kit.fontawesome.com/60a3ee99a2.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

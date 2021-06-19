@@ -1,0 +1,313 @@
+:root{ /*variaveis de css 3*/
+    --vermelho: #e50914;
+    --preta:#141414;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elementos básicos*/
+body{
+    background-color: var(--preta);
+    font-family: Nunito Sans, Arial, Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family:Times, "Arial Black" ;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color:#AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #FFF;
+}
+
+/*Filme principal*/
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%);
+    height: 400px;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 10px;
+
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family:"Trebuchet MS",Arial,sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    border-radius: 5px;
+
+    cursor:pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color:white;
+    color:black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left:  30px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.infos{
+    display: flex;
+    margin-bottom: 2rem;
+    font-size: 18px;
+}
+
+.infos p + p{
+    
+    margin-left: 1rem;
+}
+
+.inormacoes{
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: minmax(0,2fr) minmax(0,1fr);
+    column-gap: 2em;
+    margin-bottom: 2rem;
+}
+.inormacoes p{
+    font-size: 18px;
+}
+
+.descricao{
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.genero{
+    display: flex;
+    flex-direction: column;
+}
+
+.gender, .duracao{
+    margin-bottom: 1rem;
+}
+
+.container  {
+    margin-right: 1rem;
+    margin-top:1rem ;
+}
+
+div i {
+    color: #777;
+}
+
+.botoes{
+    margin-top: 1rem;
+}
+.botoes .botao{
+    color: black;
+    background-color: white;
+}
+.botoes .botao i {
+    color: black;
+}
+
+h5{
+    margin-top: 0.5rem;
+}
+
+.st{
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:576px) { 
+    .inormacoes{
+        display: flex!important;
+        flex-direction: column;
+    }
+    .gender{
+        margin-top: 1rem;
+    }
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        margin-left: 10px;
+    }
+    .container .titulo{
+        margin-top: 8rem;
+    }
+    .botao{
+        margin-right: 0;
+        margin-top: 5px;
+        width: 100%;
+    }
+    .filme-principal{
+        margin-bottom:7.5rem;
+    }
+    .item:hover .overlay{
+        height: 60%;
+    }
+    .overlay div .botao{
+        margin-top: 1rem;
+        margin-left: 1.2rem;
+        width: 80%;
+    }
+    .overlay div p:nth-child(1){
+        font-size: clamp(20px,25px,30px);
+    }
+    .botoes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+    }
+    .filme-principal .container{
+        width: 90%;
+    }
+    
+}
+
+
+@media screen and (min-width:576) and (max-width:700px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+    }
+    .filme-principal{
+        margin-bottom:5.5rem;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .overlay div p:nth-child(1){
+        font-size: clamp(20px,25px,30px);
+    }
+    .overlay div .botao{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:1000px){
+    .descricao{
+        width: 50%;
+        font-size: 18px;
+    }
+
+    .filme-principal{
+        margin-bottom:1rem;
+        height: 500px;
+    }
+    .overlay div p:nth-child(1){
+        font-size: clamp(16px,19px,21px);
+    }
+}
+
+@media screen and (min-width:1024px){
+    nav a{
+        font-size: 25px;
+    }
+    .descricao{
+        font-size: 22px;
+    }
+    .filme-principal{
+        margin-bottom:3.5rem;
+        height: 800px;
+    }
+    .filme-principal .titulo{
+        font-size: 60px;
+    }
+    .overlay div p:nth-child(1){
+        font-size: clamp(20px,22px,24px);
+    }
+    .botao{
+        font-size: 20px;
+    }
+    .overlay div .botao{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:2000px){
+    header .logo{
+        font-size:80px;
+    }
+    header nav a{
+        font-size:30px;
+    }
+    .filme-principal{
+        margin-bottom:3.5rem;
+        height: 800px;
+        font-size: 32px;
+    }
+
+    .filme-principal .titulo{
+        font-size: 80px;
+    }
+    .botao{
+        font-size: 24px;
+    }
+    .infos{
+        font-size:25px ;
+    }
+    .inormacoes{
+        font-size: 30px;
+    }
+    .inormacoes p{
+        font-size: 25px;
+    }
+}
+
+

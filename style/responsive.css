@@ -1,6 +1,6 @@
 
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:576px) { 
     header .container{
         display: flex;
         flex-direction: column;
@@ -19,6 +19,26 @@
     .filme-principal{
         margin-bottom:7.5rem;
     }
+    .item:hover .overlay{
+        height: 60%;
+    }
+    .overlay div .botao{
+        margin-top: 1rem;
+        margin-left: 1.2rem;
+        width: 80%;
+    }
+    .overlay div p:nth-child(1){
+        font-size: clamp(15px,18px,20px);
+    }
+    .botoes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+    }
+    .filme-principal .container{
+        width: 90%;
+    }
     
 }
 
@@ -31,27 +51,56 @@
     .botao{
         margin-top: 5px;
         width: 300px;
+        
     }
     .filme-principal{
         margin-bottom:5.5rem;
     }
 }
 
+@media screen and (min-width:700px) {
+    .overlay div p:nth-child(1){
+        font-size: clamp(20px,25px,30px);
+    }
+    .overlay div .botao{
+        font-size: 16px;
+    }
+}
+
 @media screen and (min-width:1000px){
     .descricao{
         width: 50%;
+        font-size: 18px;
     }
 
     .filme-principal{
         margin-bottom:1rem;
         height: 500px;
     }
+    .overlay div p:nth-child(1){
+        font-size: clamp(16px,19px,21px);
+    }
 }
 
 @media screen and (min-width:1024px){
+    .descricao{
+        font-size: 22px;
+    }
     .filme-principal{
         margin-bottom:3.5rem;
         height: 800px;
+    }
+    .filme-principal .titulo{
+        font-size: 60px;
+    }
+    .overlay div p:nth-child(1){
+        font-size: clamp(20px,22px,24px);
+    }
+    .botao{
+        font-size: 20px;
+    }
+    .overlay div .botao{
+        font-size: 14px;
     }
 }
 

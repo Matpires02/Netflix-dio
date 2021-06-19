@@ -3,6 +3,8 @@
     --preta:#141414;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -12,7 +14,7 @@
 /*Elementos básicos*/
 body{
     background-color: var(--preta);
-    font-family: Arial, Times, serif;
+    font-family: Nunito Sans, Arial, Times, serif;
     color: white;
 }
 
@@ -24,7 +26,7 @@ header .container{
 
 header .logo{
     color: var(--vermelho);
-    font-family:"Arial Black", Times;
+    font-family:Times,"Arial Black" ;
     font-size: 40px;
     margin-left: 5px;
 }
@@ -71,6 +73,7 @@ header nav a:hover{
     padding: 15px 30px;
     margin-right: 15px;
     font-size: 12px;
+    border-radius: 5px;
 
     cursor:pointer;
     transition: .3s ease all;
@@ -83,6 +86,7 @@ header nav a:hover{
 
 .botao i{
     margin-right: 8px;
+    
 }
 
 .container{
@@ -103,4 +107,70 @@ header nav a:hover{
 
 .carrosel-filmes{
     margin-top: 5px;
+    margin-left:  1rem;
+    margin-right:  1rem;
 }
+
+h4.titulo{
+    margin-bottom: 1rem;
+    font-size: 30px;
+}
+
+.c{
+    position: relative;
+}
+
+.c img{
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:linear-gradient(rgb(0,0,0,.50),rgba(0,0,0,.50)100%);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+
+  .item:hover .overlay{
+    height: 50%;
+  }
+
+  .overlay div {
+    display: flex;  
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+.overlay div p:nth-child(1){
+    font-family: "Trebuchet MS",Arial,sans-serif;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+.overlay div .botao{
+    background-color: rgb(0,0,0);
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-size: 14px;
+}
+.overlay div .botao:hover{
+    background-color:white;
+}
+
+.item, .box-filme{
+    border-radius: 5px;
+}
+
+.owl-dots{
+    margin-bottom: 2rem;
+}
+
+  
+
+

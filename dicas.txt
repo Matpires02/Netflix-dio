@@ -1,0 +1,10 @@
+imagens:
+https://api.themoviedb.org/3/tv/{id}/images?api_key=03c289251eafe042b3a223b60229cb92
+https://api.themoviedb.org/3/movie/{id}/images?api_key=03c289251eafe042b3a223b60229cb92
+
+recuperar imagens
+https://image.tmdb.org/t/p/w1920_and_h1080_face{file_path}  --banner
+https://image.tmdb.org/t/p/w600_and_h900_face{file_path}  --poster
+dados:
+https://api.themoviedb.org/3/tv/{id}?api_key=03c289251eafe042b3a223b60229cb92&language=pt-BR
+https://api.themoviedb.org/3/movie/{id}?api_key=03c289251eafe042b3a223b60229cb92&language=pt-BR

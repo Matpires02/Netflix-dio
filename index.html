@@ -20,7 +20,7 @@
         <div class="container">
             <h2 class="logo">NETFLIX</h2>
             <nav>
-                <a href="#">Inícios</a>
+                <a href="#">Início</a>
                 <a href="#">Séries</a>
                 <a href="#">Filmes</a>
                 <a href="#">Documentários</a>
@@ -29,15 +29,15 @@
     </header>
 
     <main>
-        <div class="filme-principal">
+        <div class="filme-principal"> 
             <div class="container">
                 <h3 class="titulo">Naruto Shippuden</h3>
                 <p class="descricao">
                 Naruto Shippuden ocorre 2 anos e meio após Naruto ter ficado para treinar com Jiraiya. Após seu retorno, Naruto descobre que seus amigos shinobi's o superaram na classificação, e ele caiu para trás. No entanto, com apenas 6 meses para resgatar Sasuke, Naruto tem de enfrentar inimigos ainda mais perigosos. O plano da Akatsuki se revela lentamente e os perigos surgem mais do que nunca!
                 </p>
                 <div class="botoes">
-                    <button role="button" class="botao"><i class="fas fa-play"></i>ASSISTIR AGORA</button>
-                    <button class="botao" role="button"><i class="fas fa-info-circle"></i>MAIS INFORMAÇÕES</button>
+                    <button role="button" class="botao" onclick="irPagina(31910,'serie')"><i class="fas fa-play"></i>ASSISTIR AGORA</button>
+                    <button class="botao" role="button" onclick="irPagina(31910,'serie')"><i class="fas fa-info-circle"></i>MAIS INFORMAÇÕES</button>
                 </div>
             </div>
         </div>
@@ -47,67 +47,238 @@
         <div class="owl-carousel owl-theme">
             <div class="item">
                 <img class="box-filme" src="img/mini1.jpg" alt="Banner da série Agentes da Shield">
+                <div class="overlay">
+                    <div>
+                        <p>Agentes da Shield</p>
+                        <button class="botao" onclick="irPagina(1403,'serie')">
+                            <i class="fas fa-info-circle" aria-hidden="true"></i>Mais Informações
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="item">
                 <img class="box-filme" src="img/mini2.jpg" alt="Banner da série Anne com um E">
+                <div class="overlay">
+                    <div>
+                        <p>Anne com um E</p>
+                        <button class="botao" onclick="irPagina(70785,'serie')">
+                            <i class="fas fa-info-circle" aria-hidden="true"></i>Mais Informações
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="item">
                 <img class="box-filme" src="img/mini3.jpg" alt="Banner da série Avatar: A lenda de Anng">
+                <div class="overlay">
+                    <div>
+                        <p>Avatar: A lenda de Aang</p>
+                        <button class="botao" onclick="irPagina(246,'serie')">
+                            <i class="fas fa-info-circle" aria-hidden="true"></i>Mais Informações
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="item">
                 <img class="box-filme" src="img/mini4.jpg" alt="Banner do filme A voz do silêncio">
+                <div class="overlay">
+                    <div>
+                        <p>A voz do silêncio</p>
+                        <button class="botao" onclick="irPagina(378064,'filme')">
+                            <i class="fas fa-info-circle" aria-hidden="true"></i>Mais Informações
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="item">
                 <img class="box-filme" src="img/mini5.jpg" alt="Banner da série Ben 10: Força Alienigena">
+                <div class="overlay">
+                    <div>
+                        <p>Ben 10: Força Alienigena</p>
+                        <button class="botao" onclick="irPagina(6040,'serie')">
+                            <i class="fas fa-info-circle" aria-hidden="true"></i>Mais Informações
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="item">
                 <img class="box-filme" src="img/mini6.jpg" alt="Banner do filme A viagem de Chihiro">
+                <div class="overlay">
+                    <div>
+                        <p>A viagem de Chihiro</p>
+                        <button class="botao" onclick="irPagina(129,'filme')">
+                            <i class="fas fa-info-circle" aria-hidden="true"></i>Mais Informações
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="item">
                 <img class="box-filme" src="img/mini7.jpg" alt="Banner do filme Cruella">
+                <div class="overlay">
+                    <div>
+                        <p>Cruella</p>
+                        <button class="botao" onclick="irPagina(337404,'filme')">
+                            <i class="fas fa-info-circle" aria-hidden="true"></i>Mais Informações
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="item">
                 <img class="box-filme" src="img/mini8.jpg" alt="Banner do filme Enola Homes">
+                <div class="overlay">
+                    <div>
+                        <p>Enola Homes</p>
+                        <button class="botao" onclick="irPagina(497582,'filme')">
+                            <i class="fas fa-info-circle" aria-hidden="true"></i>Mais Informações
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/mini9.jpg" alt="Banner da série Drive to Survive">
+                <img class="box-filme" src="img/mini9.jpg" alt="Banner da série Formula 1: Dirigir para Viver">
+                <div class="overlay">
+                    <div>
+                        <p>Formula 1: Dirigir para Viver</p>
+                        <button class="botao" onclick="irPagina(87083,'serie')">
+                            <i class="fas fa-info-circle" aria-hidden="true"></i>Mais Informações
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="item">
                 <img class="box-filme" src="img/mini10.jpg" alt="Banner da série O incrivel mundo de Gumball">
+                <div class="overlay">
+                    <div>
+                        <p>O incrivel mundo de Gumball</p>
+                        <button class="botao" onclick="irPagina(37606,'serie')">
+                            <i class="fas fa-info-circle" aria-hidden="true"></i>Mais Informações
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="item">
                 <img class="box-filme" src="img/mini11.jpg" alt="Banner da série Hora de Aventura">
+                <div class="overlay">
+                    <div>
+                        <p>Hora de Aventura</p>
+                        <button class="botao" onclick="irPagina(15260,'serie')">
+                            <i class="fas fa-info-circle" aria-hidden="true"></i>Mais Informações
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="item">
                 <img class="box-filme" src="img/mini12.jpg" alt="Banner da série iCarly">
+                <div class="overlay">
+                    <div>
+                        <p>iCarly</p>
+                        <button class="botao" onclick="irPagina(5371,'serie')">
+                            <i class="fas fa-info-circle" aria-hidden="true"></i>Mais Informações
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="item">
                 <img class="box-filme" src="img/mini13.jpg" alt="Banner do filme Your Name">
+                <div class="overlay">
+                    <div>
+                        <p>Your Name </p>
+                        <button class="botao" onclick="irPagina(372058,'filme')">
+                            <i class="fas fa-info-circle" aria-hidden="true"></i>Mais Informações
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="item">
                 <img class="box-filme" src="img/mini14.jpg" alt="Banner da série A lenda de Korra">
+                <div class="overlay">
+                    <div>
+                        <p>A lenda de Korra</p>
+                        <button class="botao" onclick="irPagina(33880,'serie')">
+                            <i class="fas fa-info-circle" aria-hidden="true"></i>Mais Informações
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="item">
                 <img class="box-filme" src="img/mini15.jpg" alt="Banner do filme Vingadores: Ultimato">
+                <div class="overlay">
+                    <div>
+                        <p>Vingadores: Ultimato</p>
+                        <button class="botao" onclick="irPagina(299534,'filme')">
+                            <i class="fas fa-info-circle" aria-hidden="true"></i>Mais Informações
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/mini16.jpg" alt="Banner da série Wanda Vision">
+                <img class="box-filme" src="img/mini16.jpg" alt="Banner da série WandaVision">
+                <div class="overlay">
+                    <div>
+                        <p>WandaVision</p>
+                        <button class="botao" onclick="irPagina(85271,'serie')">
+                            <i class="fas fa-info-circle" aria-hidden="true"></i>Mais Informações
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="item">
                 <img class="box-filme" src="img/mini17.jpg" alt="Banner da série Falcão e Soldado Invernal">
+                <div class="overlay">
+                    <div>
+                        <p>Falcão e Soldado Invernal</p>
+                        <button class="botao" onclick="irPagina(88396,'serie')">
+                            <i class="fas fa-info-circle" aria-hidden="true"></i>Mais Informações
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="item">
                 <img class="box-filme" src="img/mini18.jpg" alt="Banner da série Loki">
+                <div class="overlay">
+                    <div>
+                        <p>Agentes da Shield</p>
+                        <button class="botao" onclick="irPagina(84958,'serie')">
+                            <i class="fas fa-info-circle" aria-hidden="true"></i>Mais Informações
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
+    
+    <div class="carrosel-filmes">
+        <h4 class="titulo">Filmes em alta</h4>
+        <div class="owl-carousel owl-theme" id="populares">
+            <div class="item c" ></div>
+            <div class="item c" ></div>
+            <div class="item c" ></div>
+            <div class="item c" ></div>
+            <div class="item c" ></div>
+            <div class="item c" ></div>
+            <div class="item c" ></div>
+            <div class="item c" ></div>
+            <div class="item c" ></div>
+            <div class="item c" ></div>
+            <div class="item c" ></div>
+            <div class="item c" ></div>
+            <div class="item c" ></div>
+            <div class="item c" ></div>
+            <div class="item c" ></div>
+            <div class="item c" ></div>
+            <div class="item c" ></div>
+            <div class="item c" ></div>
+            <div class="item c" ></div>
+            <div class="item c" ></div>
+        </div>
+    </div>
+        
+
 </body>
 
 <script src="https://kit.fontawesome.com/60a3ee99a2.js" crossorigin="anonymous"></script>
-
 <script src="js/owl/jquery.min.js"></script>
 <script src="js/owl/owl.carousel.min.js"></script>
+<script src="js/owl/jquery.mousewheel.min.js"></script>
 <script src="js/owl/setup.js"></script>
-
 </html>
